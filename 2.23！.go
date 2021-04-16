@@ -53,5 +53,22 @@ func main(){
 	 * Format 系列
 	 * -------------
 	 */
-	
+	// FormatBool
+	str2 := strconv.FormatBool(false)
+	fmt.Printf("%v \n", str2)
+
+	// FormatInt
+	fmt.Printf("%v \n ", strconv.FormatInt(-30, 2))
+
+	// FormatUint
+	fmt.Printf("%v \n ", strconv.FormatUint(30, 2))
+
+	// FormatFloat
+	fmt.Printf("%v \n ", strconv.FormatFloat(30.58, 'E', -1, 64))
+
+	// append 切片追加 - 没懂
+	//b10 := []byte("ab的")
+	b10 := []string{"a"}
+	b10 = append(b10, "s")
+	fmt.Println(b10)
 }
